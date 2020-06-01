@@ -1,2 +1,13 @@
-We consider summarization in this module. To facilitate the discussion, we consider summarization of a single given document There are two modes of summarization: extractive and abstractive. An extractive summarization of a given document is a subset of the original document. In other words, an extractive summarizer attempts to determine the most important sentences within the document and presents these sentences as the summarization. An abstractive summarizer provides an abstract of the document. You might think of it this way: a highly trained professional is asked to read a highly technical paper in his/her specialty field and provide a short (one or two paragraph) description of the paper.
-This description (often called "the abstract") need not contain any of the sentences from the original paper.
+Duo Security is a subsidiary company of the great technology company CISCO and it is responsible for one of the world's trusted authentication systems (the Duo 2nd Factor Authentication System) which is used when logging onto EMU's systems and many other systems. This company is not only well-aligned with my new acquired technical skills but also my passion (Data Analytics) and I am happy to join this visionary company for the next 3 months.
+
+I will be carrying out tasks that involve retrieving data from databases and cleaning this data to make it available for further analysis to find trends and look for possible solutions to automate this process. I am taking a class titled Intro to Information Retrieval (COSC 462) that has taught me all the theory I would need to know when dealing with information retrieval from files and databases.
+
+I expect not only to learn new ideas from this internship opportunity but I will also apply what I have learned from the class I am taking, to improve systems and business processes at Duo Security under my supervisor's guidance.
+
+I also expect to gain new knowledge about the ever changing dynamics of data retrieval and analysis from an industrial point of view in order to build a concrete theoretical and technical understanding of what I had learned in class.
+
+My role as an intern at Duo Security aligns well with my current class in many ways including the retrieval of information from data storage mechanisms (Databases or files) and conducting analysis on this retrieved information to further enhance this data and make it optimize business processes.
+
+The class I am currently in has introduced me to many tools and mechanisms which are applicable to situations I will be faced with when performing information retrieval from data sources, but this class also taught me how to solve these issues.
+
+The research I've conducted in this class has taught me how to automate the process above and this will surely be an opportunity for me to practically apply what I've learned in class.
