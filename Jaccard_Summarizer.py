@@ -46,24 +46,19 @@ def summarize_doc(input_file, N):
     f = open(input_file, "r")
     content = f.read()
     
+#     create a texblob object using the contebn from the document
     doc = TextBlob(content)
     
 #     get the paragraphs and the length
-    paragraphs, parapraph_len = split_into_paragraphs(doc)
+#     paragraphs, parapraph_len = split_into_paragraphs(doc)
     
 #     get all the words in the doc
     words = doc.words
     sentences = doc.sentences
 
-# -----------
-#     remove stop words
-#     doc = TextBlob(doc.words)
-# -----------
-
     print('stemming document and removing file stop words...\n')
 #     stem document
     words = words.stem()
-    
     
 #     remove stop words
 
@@ -76,19 +71,21 @@ def summarize_doc(input_file, N):
 #     remove duplicate words
     no_dup_words = list(set(words))
 
-#   Jaccard Similarity Rank
+#   rank using the Jaccard Similarity Rank technique
     ranking = {}
     ranking = rank_sentences(sentences_dict)
     
-#   based off the ranking, return the N top sentences
+#   sort rank in asceding order
     sorted_rank = dict(sorted(ranking.items(), key=operator.itemgetter(1), reverse=True))
 
-#    return the top N ranked sentences
+#    return the top N ranked sentences (select the top)
     summarized_doc = ''
     for j in range(N):
-        summarized_doc += str(sentences[j]) + ' '   
+        sorted_rank[j]
+        if (sorted_rank[j] > 0):
+            summarized_doc += str(sentences[j]) + ' \n'   
     
-    new_file = "summarized_document.smz"
+    new_file = input_file.split('.')[0]+'_'+str(N)+".smz"
     print('summarized content saved to '+new_file+'...\n')
 #   concatinate sentences into a string and add to output file .smz
     f = open(new_file, "w")
